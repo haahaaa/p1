@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="86.5dp">
+        <TextView
+            android:id="@+id/gd"
+            android:text="Wwin"
+            android:textSize="34sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <GridLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+
+        <Button
+            android:id="@+id/publish_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/publish"
+        />
+        <Button
+            android:id="@+id/expert_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"   
+             android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/expert" 
+        />
+        <Button
+            android:id="@+id/task_button"
+            android:layout_width="32dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/task" 
+            android:layout_marginTop="60dp"
+        />
+        <Button        
+            android:id="@+id/hand_button"
+            android:layout_width="32dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="60dp"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/hand" 
+            android:layout_marginTop="60dp"
+        />
+        
+     
+
+       
+    </GridLayout>
+</LinearLayout>
+
